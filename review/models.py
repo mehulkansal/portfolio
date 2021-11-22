@@ -8,4 +8,8 @@ class review(models.Model):
     mail = models.EmailField(max_length=30)
     contact = models.IntegerField()
     text = models.TextField()
+
+
+class counter(models.Model):
+    count = models.IntegerField(default=0)
 # Create your models here.

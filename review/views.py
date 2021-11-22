@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import review
+from .models import review, counter
 # Create your views here.
 
 

@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+from typing import Counter
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 t = os.path.join(BASE_DIR, 'static')
@@ -27,7 +28,6 @@ SECRET_KEY = '7@98lzjb4xxkf^2+a0gvlhch91icty^$l_bb*wl5@%b021c**2'
 DEBUG = False
 
 ALLOWED_HOSTS = ['mehulkansal24.herokuapp.com']
-
 
 # Application definition
 
