@@ -24,9 +24,9 @@ s = os.path.join(BASE_DIR, "Template")
 SECRET_KEY = '7@98lzjb4xxkf^2+a0gvlhch91icty^$l_bb*wl5@%b021c**2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://mehul-kansal.herokuapp.com/']
 
 
 # Application definition
