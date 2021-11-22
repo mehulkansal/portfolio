@@ -4,7 +4,15 @@ from .models import review, counter
 
 
 def home_view(request):
-    return render(request, "home.html")
+
+    try:
+        obj = counter.objects.all()[0]
+        count = obj.count
+        obj.count += 1
+        obj.save()
+    except Exception as e:
+        count = 0
+    return render(request, "home.html", {'count': count})
 
 
 def submit(request):
