@@ -171,22 +171,16 @@
 
         label {
             height: 30px;
-            width: 150px;
-            align-items: center;
+            /* width: 150px; */
+            /* align-items: center; */
             margin: 20px;
         }
 
         input {
-            margin-right: 300px;
-
+            /* margin-right: 300px; */
             height: 30px;
-            align-items: center;
+            /* align-items: center; */
 
-        }
-
-        textarea {
-            margin-right: 300px;
-            align-items: center;
         }
 
         .cir {
@@ -406,6 +400,10 @@
         <h1>Contact Me</h1>
         <div class="border"></div>
 
+
+
+
+
         <form action="/submit/" method="post">
             {% csrf_token %}
             <label for="name">Name</label>
@@ -431,7 +429,8 @@
 
     </div>
 
-    <div align="center" style="color: white; background-color: rgba(0, 0, 0, 0.5); font-size: 110%">
+    <br>
+    <div align="center" style="color: white; background-color: rgba(0, 0, 0, 0.5); font-size: 110%; padding: 5% 0;">
         Visitors Count : {{count}}
     </div>
 
