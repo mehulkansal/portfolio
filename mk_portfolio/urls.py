@@ -18,7 +18,7 @@ from django.urls import path
 from review import views
 
 urlpatterns = [
-    path('', views.home_view),
+    path('', views.home_view, name='home'),
     path('submit/', views.submit),
     path('admin/', admin.site.urls),
 ]

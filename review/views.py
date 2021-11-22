@@ -17,11 +17,14 @@ def home_view(request):
 
 def submit(request):
     if request.method == "POST":
-        name = request.POST['name']
-        email = request.POST['email']
-        contact = request.POST['contact']
-        text = request.POST['text']
-        add = review.objects.create(
-            name=name, mail=email, contact=int(contact), text=text)
-        add.save()
+        try:
+            name = request.POST['name']
+            email = request.POST['email']
+            contact = request.POST['contact']
+            text = request.POST['text']
+            add = review.objects.create(
+                name=name, mail=email, contact=int(contact), text=text)
+            add.save()
+        except Exception as e:
+            pass
         return redirect('home')
